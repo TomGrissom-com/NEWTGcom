@@ -1,0 +1,565 @@
+* {
+    box-sizing: border-box;
+    font-family: Trebuchet MS;
+    color: white;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+/* CSS */
+.button-36 {
+    background-image: linear-gradient(180deg, #0180b1 9.16%, #006d8f 43.89%, #005070 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.button-36:hover {
+    box-shadow: rgba(255, 255, 255, 0.5) 1px 1px 30px 30px;
+    transition-duration: .2s;
+    background-image: linear-gradient(0deg, #0180b1 9.16%, #006d8f 43.89%, #005070 64.72%);
+}
+img{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+  padding:1px;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 2em;
+  display: inline-block;
+}
+h2{
+    padding:1px;
+    font-weight: bold;
+    line-height: 1;
+    display: inline-block;
+    font-size:1.5em;
+}
+p {
+  padding: 0;
+  margin:0 0 20px 0;
+  font-weight: normal;
+}
+a:link, a:visited {
+  text-decoration: underline;
+  color: #000;
+}
+a:hover {
+  text-decoration: chartreuse;
+}
+
+a img:hover{
+    opacity: .5;
+}
+textarea{
+  min-height: 200px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: black;
+}      
+/* Headers */
+.headertext{
+    text-align: center;
+    font-size: 2vw;
+    text-shadow: 3px 3px 10px white, 3px 3px 10px white;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+.imgbox {
+    display: grid;
+    width: 100%
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+/* Containers */
+.section-wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 7px rgba(0,0,0,1);
+}
+.content-wrap {
+    width: 75%;
+    margin: auto;
+}
+.section-wrap::after{
+    content:"";
+    clear: both;
+}
+
+/*Wrapper Start*/
+.wrapper-container{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.wrapper > div {
+  flex: 1 1 300px;
+  min-height: 300px;
+  margin: 5px;
+  color: white;
+}
+.wrapper > div > img{
+    max-width: 95%;
+    max-height: 95%; 
+    vertical-align: middle;
+    overflow: hidden;
+}
+.wrapper > div > a > img{
+    max-width: 95%;
+    max-height: 95%; 
+    vertical-align: middle;
+    overflow: hidden;    
+}
+
+/*end of wrapper*/
+
+.backgroundimg_purptech{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 58%, rgba(9,0,200,1) 100%);
+}
+.backgroundimg_purptech2{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 20%, rgba(9,0,200,1) 100%);
+}
+.backgroundimg_purptech_flipped{
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 58%, rgba(9,0,200,1) 100%);
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+/* Create two equal columns that floats next to each other */
+.row-container{
+    padding: 10px 10px;
+    position: relative;
+    color: white;
+    align-content: center;
+}
+.row{
+    display: inline-table;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.columns {
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.columns-push {
+    position: relative;
+    left: 50%;
+    right: auto;
+    text-align: left;
+}
+.columns-pull {
+    position: relative;
+    left: auto;
+    right: 50%;
+}
+.columns > img{
+    max-height: 500px;
+    max-width: 100%; 
+}
+
+
+.row::after{
+    content: "";
+    clear: both;
+}
+/* Clear floats after the columns */
+
+/*.column ::after{
+    content: "";
+}*/
+.nav{
+    position: fixed;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: auto;
+}
+#header{
+    z-index:1000;
+    position: fixed;
+    width:80%;
+    height: auto;
+}
+.topnav{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 20%, rgba(9,0,200,1) 100%);
+  display: inline-block;
+  color: black;
+  text-align: left;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 100%;
+  height: auto;  
+  margin: 0;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+    padding: 10px 5px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.topnav a.icon{
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: none;
+}
+.tgfa{
+    float: right;
+    display: inline-block;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: blue;
+  color: white;
+}
+.topnav img{
+    height: 75px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.pagetop{
+    max-width: 500px;
+    margin: auto;
+    padding: 45px;
+    align-content: center;
+}
+.leftalign{
+    
+    text-align: left;
+}
+.centerup{
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+}
+.bgNbtm{
+    padding: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+body {
+    height: 100%;
+    padding-top: 0px;
+    margin: 0;
+    min-height: 100%;
+    font-family: Rotunda,sans-serif;
+    color: #091c2b;
+    font-weight: 300;
+}
+.bgimg{
+    background-image: url('../img/BannerTop.png');
+    background-position: 0 0,50% 100%;
+    background-size: auto;
+    background-repeat: repeat,no-repeat;
+}
+
+#container {
+  text-align: center;
+  height: 100%;
+  min-height: 90vh;
+  background-color: lightgray;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.widget {
+  margin-bottom: 20px;
+}
+.widget h2 {
+  margin: 0 0 10px 0;
+  padding: 0 15px;
+  font-weight: normal;
+  border-bottom: 1px solid #ddd;
+}
+.widget .inner {
+  margin: 0 10px;
+}
+.float_container{
+    width: 95%;
+    padding: 20px;
+    overflow: hidden;
+    height: auto;
+    background-color: transparent;
+}
+.float_container img{
+    width: 150px;
+    margin-right: 15px;
+    float: left;
+}
+.float_container p{
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+    padding: 1px;
+    text-align: center;
+    font-size: 15px;
+    overflow: hidden;
+}
+/*Navigation*/
+aside {
+  padding-top: 15px;
+  width: 25%;
+  float: right;
+  border-left: 1px dashed #aaa;
+  padding-left: 15px;
+}
+login li.link {
+  margin-top:5px;
+}
+/*Footer*/
+footer{
+  border-top: 1px dashed #ddd;
+  position: relative;
+  color: #999;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  clear: both;
+}
+
+/*Misc*/
+.clear {
+  clear: both;
+}
+.photo{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.top-left {
+  position: absolute;
+  top: 30%;
+  color: black;
+  font-family: sans-serif;
+  font-size: 5.5vw;
+  text-align: center; 
+}
+.floatleft{
+    float: left;
+}
+.floatright{
+    float: right;
+}
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.interior-page-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+/* Dashed border */
+hr.dashed {
+    border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+    border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
+
+/*
+**********************************************************************************
+**********************************************************************************
+**********************************************************************************
+EVERYTHING BELOW THIS LINE WILL BE AFFECTED IF THE SCREEN IS BIGGER THAN 800px
+**********************************************************************************
+**********************************************************************************
+**********************************************************************************
+*/
+.dropbtn {
+    display: none;
+}
+@media(max-width: 955px){
+h2{
+    word-wrap: break-word;
+    width: 50%;
+    font-size: 1em;
+}
+.section-wrap{
+    width: 100%;
+}
+.logo{
+    height: 10%;
+}
+.column{
+    width: 100%;
+}
+/*making the dropdown button*/
+
+.topnav{
+    width: 100vw;
+}
+.topnav > h1{
+    font-size: 1em;
+    max-width: 150px;
+}
+.topnav a.icon{
+    display: block;
+}
+.topnav a{
+    padding-right: 0;
+    margin-right: 42px;
+    margin-top: 0;
+    
+}
+.button-36 {
+    padding: 0 2.6rem;
+}
+
+.topnav #myLinks{
+    display: none;
+}
+.columns {
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+.columns-push {
+    position: relative;
+    left: 0%;
+    right: auto;
+    text-align: center;
+}
+.columns-pull {
+    position: relative;
+    left: auto;
+    right: 0%;
+    text-align: center;
+}
+}
